@@ -1,19 +1,17 @@
-# My Portfolio
+# Ping Pong
 
-#### My Portfolio, 02/10/2017
+#### Web Application, 02/10/2017
 #### By: Ryan Jones
 
 ## Description:
-This is a site I built for my individual project at Epicodus, you can follow this link to view the page live from gh-pages, http://znergy.github.io/my-portfolio
+Ping Pong, is a web application I built using JavaScript and JQuery. The user enters a number and the logic spits out the appropriate results. Here is a link to the gh-pages, https://znergy.github.io/ping-pong/
 
-## Noteworthy Projects:
-* BlackJack Game (JavaScript)
-* RSS Feed News App (Java)
-* Calculator App (Java)
+## Known Bugs:
+There is no known bugs, please let me know if you find any.
 
 ## Setup/Installation Requirements
 * Clone the repository
-* Navigate to the my-portfolio directory
+* Navigate to the ping-pong directory
 * Open index.html
 
 ## Support/Contact Details
