@@ -1,7 +1,10 @@
 $(document).ready(function() {
-  $("#submit").click(function() {
+  
+  $("#submit").click(function(event) {
     
-    var string = "5";
+    event.preventDefault();
+    
+    var string = $("#userInput").val();
     var number = parseInt(string);
     var count = 1;
     var value = "";
