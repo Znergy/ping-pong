@@ -9,6 +9,8 @@ $(document).ready(function() {
   
   /**** Back End Logic ****/
   
+  var isClicked = false;
+  
   function doSomething(string) {
     var number = parseInt(string);
     var count = 1;
@@ -31,11 +33,17 @@ $(document).ready(function() {
   }
   
   /**** Front End Logic ****/
+  
   $("#submit").click(function(event) {
-    
-    event.preventDefault();
-    
-    doSomething($("#userInput").val());
-    
+      event.preventDefault();
+      var string = $("#userInput").val();
+    if (!isClicked) {
+      $("#populateUL").html("");
+      isClicked = true;
+    } else {
+      $("#populateUL").html("");
+      isClicked = false;
+    }
+    doSomething(string);
   });
 });
