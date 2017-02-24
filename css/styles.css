@@ -134,8 +134,28 @@ span.light-blue {
   padding-bottom: 10px;
 }
 
+.pingEffect {
+  color: darkgreen;
+  font-size: 20px;
+  text-shadow: 1px 0px #000;
+}
+
+.pongEffect {
+  color: darkred;
+  font-size: 20px;
+  text-shadow: 1px 0px #000;
+}
+
+.pingPongEffect {
+  color: darkblue;
+  font-size: 20px;
+  text-shadow: 1px 0px #000;
+}
+
 #populateUL {
   list-style-type: square;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
 }
 
 /**** Footer ****/

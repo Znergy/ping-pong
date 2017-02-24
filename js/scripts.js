@@ -15,20 +15,25 @@ $(document).ready(function() {
     var number = parseInt(string);
     var count = 1;
     var value = "";
+    var className = "";
 
     while (count <= number) {
       
       if (count % 15 === 0) {
         value = "ping-pong";
+        className = "pingPongEffect";
       } else if (count % 3 === 0) {
         value = "ping";
+        className = "pingEffect";
       } else if (count % 5 === 0) {
         value = "pong";
+        className = "pongEffect";
       } else {
         value = count;
+        className = "";
       }
       count+= 1;
-      $("#populateUL").append("<li>" + value + "</li>");
+      $("#populateUL").append("<li class= " + className + ">" + value + "</li>");
     }
   }
   
