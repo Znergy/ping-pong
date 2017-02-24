@@ -126,6 +126,26 @@ span.light-blue {
   text-align: center;
 }
 
+.btn {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn:hover {
+  -webkit-transition-duration: 0.4s; /* w3 schools */
+  transition-duration: 0.4s;
+}
+
+#submit:hover {
+  background-color: #333;
+  color: #ccc;
+}
+
+#submit:active {
+  background-color: #333;
+  color: #ccc;
+}
+
 .playHr {
   text-align: left;
   width: 20%;
@@ -133,6 +153,8 @@ span.light-blue {
   border-color: #333;
   padding-bottom: 10px;
 }
+
+/* Ping Pong Effects */
 
 .pingEffect {
   color: darkgreen;
@@ -164,12 +186,12 @@ span.light-blue {
   color: #eee;
   margin-top: 5px;
   padding-top: 13px;
-  padding-bottom: 10px;
+  padding-bottom: 27px;
   text-align: center;
 }
 
 .col-md-6 {
-  padding-bottom: 10px;
+  margin-top: 10px;
 }
 
 footer {
