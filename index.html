@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ping-Pong</title>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Ping-Pong</h2>
+      </div>
+      <div class="well">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>About Ping Pong</h3>
+            <h4>Created By:</h4>
+            <p>Ryan Jones</p>
+            <h4>Github Username/URL:</h4>
+            <p><a href="https://github.com/znergy">Github</a></p>
+            <h4>Level 2 Test for:</h4>
+            <p>Java</p>
+          </div>
+          <div class="col-md-9">
+            <h2>Lets Play!</h2>
+            <h3>Rules:</h3>
+            <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
+            <ol>
+              <li>Numbers Divisible by 3 become "ping"</li>
+              <li>Numbers Divisible by 5 become "pong"</li>
+              <li>Numbers Divisible by 15 become "Ping-Pong"</li>
+            </ol>
+            <form>
+              <label>Enter your number here:</label>
+              <input type="text">
+              <button class="btn btn-default">Ping Pong!</button>
+            </form>
+            <ul id="populateUL">
+              <!-- Results will show here using JQuery -->
+            
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JQuery CDN -->
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
+</html>
