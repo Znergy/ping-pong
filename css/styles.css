@@ -1,6 +1,24 @@
+/*
+* Application: Ping-Pong
+* File Name: styles.css
+* Programmer: Ryan Jones
+* Version: 02/24/2017
+*/
+
 body,html {
   background-color: #ccc;
 }
+
+h2, h3, h4 {
+  font-family: 'Sansita', sans-serif;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1em;
+}
+
+/**** Bootstrap ****/
 
 .container-fluid {
   margin: 0;
@@ -15,9 +33,19 @@ body,html {
   border-radius: 0px;
 }
 
-h1 {
+.jumbotron h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 75px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: 'Sansita', sans-serif;
+}
+
+.logo {
+  position: relative;
+  float: left;
+  top: 30px;
+  left: 375px;
 }
 
 .well {
@@ -25,6 +53,8 @@ h1 {
   margin-left: 30px;
   margin-right: 30px;
 }
+
+/**** Side 1 ****/
 
 .side1 {
   background-color: #ccc;
@@ -35,12 +65,19 @@ h1 {
   padding-left: 20px;
 }
 
-.side2 {
-  background-color: bisque;
-  height: auto;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 30px;
+.aboutHr {
+  width: 85%;
+  border-color: #333;
+  margin-top: -5px;
+  margin-left: auto;
+}
+
+.side1 h3 {
+  margin-top: -5px;
+  text-align: center;
+  font-size: 35px;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 .social {
@@ -48,3 +85,82 @@ h1 {
   padding-bottom: 20px;
   text-align: center;
 }
+
+/* Spans */
+
+span.shadow {
+  text-shadow: 1px 1px #000;
+}
+
+span.yellow {
+  color: yellow;
+}
+
+span.dark-blue {
+  color: darkblue;
+}
+
+span.orange {
+  color: darkorange;
+}
+
+span.light-blue {
+  color: lightblue;
+}
+
+/**** Side 2 ****/
+
+.side2 {
+  background-color: bisque;
+  height: auto;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 140px;
+}
+
+.side2 h2 {
+  font-size: 45px;
+  margin-top: -5px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.playHr {
+  text-align: left;
+  width: 20%;
+  margin-top: -5px;
+  border-color: #333;
+  padding-bottom: 10px;
+}
+
+
+/**** Media Query ****/
+
+@media screen and (max-width: 1340px) {
+  
+  img.logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  
+  hr.aboutHr {
+    width: 35%;
+  }
+  
+  hr.playHr {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 1276px) {
+  
+  .side2 {
+    padding-bottom: 180px;
+  }
+}
+
+
+
