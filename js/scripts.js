@@ -40,8 +40,9 @@ $(document).ready(function() {
   /**** Front End Logic ****/
   
   $("#submit").click(function(event) {
-      event.preventDefault();
-      var string = $("#userInput").val();
+    event.preventDefault();
+    var string = $("#userInput").val();
+    
     if (!isClicked) {
       $("#populateUL").html("");
       isClicked = true;
@@ -49,6 +50,10 @@ $(document).ready(function() {
       $("#populateUL").html("");
       isClicked = false;
     }
-    doSomething(string);
+    if ($.isNumeric(string)) {
+      doSomething(string);
+    } else {
+      alert("Invalid Input");
+    }
   });
 });
