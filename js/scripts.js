@@ -8,40 +8,28 @@
 $(document).ready(function() {
   
   /**** Back End Logic ****/
-  
-  var isClicked = false;
-  
-  function doSomething(string) {
-    var number = parseInt(string);
-    var count = 1;
-    var value = "";
-    var className = "";
 
-    while (count <= number) {
-      
-      if (count % 15 === 0) {
-        value = "ping-pong";
-        className = "pingPongEffect";
-      } else if (count % 3 === 0) {
-        value = "ping";
-        className = "pingEffect";
-      } else if (count % 5 === 0) {
-        value = "pong";
-        className = "pongEffect";
-      } else {
-        value = count;
-        className = "";
+  function countUp(number) {
+      var array = [];
+      var count = 1;
+      while(count <= number) {
+        array.push(count);
+        count++;
       }
-      count+= 1;
-      $("#populateUL").append("<li class= " + className + ">" + value + "</li>");
-    }
+      return array;
   }
   
   /**** Front End Logic ****/
   
+  var isClicked = false;
+  
   $("#submit").click(function(event) {
+    
     event.preventDefault();
-    var string = $("#userInput").val();
+    
+    var userNumber = parseInt($("#userInput").val());
+    
+    var numberArray = countUp(userNumber);
     
     if (!isClicked) {
       $("#populateUL").html("");
@@ -50,10 +38,24 @@ $(document).ready(function() {
       $("#populateUL").html("");
       isClicked = false;
     }
-    if ($.isNumeric(string)) {
-      doSomething(string);
-    } else {
+    
+    if (!$.isNumeric(userNumber)) {
       alert("Invalid Input");
     }
+    
+    for (i = 1; i <= numberArray.length; i++) {
+
+      if (i % 15 === 0) {
+        value = "ping-pong";
+      } else if (i % 5 === 0) {
+        value = "pong";
+      } else if (i % 3 === 0) {
+        value = "ping";
+      } else {
+        value = i;
+      }
+      $("#populateUL").append("<li>" + value + "</li>");
+    }
+    
   });
 });
